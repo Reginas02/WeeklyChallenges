@@ -12,26 +12,30 @@ namespace ChallengesWithTestsMark8
               if (number % 2 == 0)
                 {
                     sum += num;
-                    {
-                        if (number % 2 != 0)
-                        {
-                            sum -= number; 
-                        }
-                    }
-                    return sum;
                 }
+
+                if (number % 2 != 0)
+                {
+                    sum -= number;
+                }
+               
+                
             }
+                    return sum;
+
+            
         }
+    }
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            var list = new List<int> { str1.Length, str2.Length, str3.Length, str4.Length};
+            var list = new List<int> { str1.Length, str2.Length, str3.Length, str4.Length };
             return list.Min();
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
         {
-            var list = new List<int>() { number1, number2, number2 3, number4};
+            var list = new List<int>() { number1, number2, number3, number4};
 
             return list.Min();
         }
